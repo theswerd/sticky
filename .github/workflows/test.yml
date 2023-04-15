@@ -1,0 +1,28 @@
+name: Test
+
+on:
+    push:
+        branches: [main]
+    pull_request:
+        branches: [main]
+
+jobs:
+    test:
+        runs-on: ubuntu-latest
+        steps:
+            - uses: actions/checkout@v3
+            - name: Use Node.js
+              uses: actions/setup-node@v3
+              with:
+                  node-version: "18.x"
+            - run: pnpm install -g pnpm
+            # Build
+            - run: pnpm install 
+              working-directory: ./app
+            - run: pnpm ci
+              working-directory: ./app
+            - run: pnpm run build
+              working-directory: ./app
+            # Test
+            - run: pnpm run check
+              working-directory: ./app
