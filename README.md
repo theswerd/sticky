@@ -25,9 +25,6 @@ ${\color{white}██████████████}$ photoshop - 75 secon
 ![](https://img.shields.io/badge/is-4288BF?style=for-the-badge)
 ![](https://img.shields.io/badge/the-84C4A9?style=for-the-badge)
 ![](https://img.shields.io/badge/best-00A6AF?style=for-the-badge)
-	
-
-	
 
 
 
