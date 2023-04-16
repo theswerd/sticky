@@ -42,13 +42,17 @@ document.querySelectorAll("img").forEach((img) => {
   addHoldListener(
     img,
     (event) => {
-      const element = event.target as HTMLElement;
+      
+      const element = event.target as HTMLImageElement;
+      const width = element.clientWidth;
+      const height = element.clientHeight;
+
       // create parent
       const parent = document.createElement("div");
       parent.style.position = "relative";
       parent.style.display = "contents";
       // put copy of element in parent
-      const copy = element.cloneNode(true) as HTMLElement;
+      const copy = element.cloneNode(true) as HTMLImageElement;
       const imageContainer = document.createElement("div");
       imageContainer.style.position = "relative";
       imageContainer.appendChild(copy);
@@ -56,8 +60,19 @@ document.querySelectorAll("img").forEach((img) => {
       parent.appendChild(imageContainer);
       // replace element with parent
       element.parentNode.replaceChild(parent, element);
+        console.log("OFFSET", event.offsetX, event.offsetY)
+        console.log("CLIENT", event.clientX, event.clientY)
+        console.log("PAGE", event.pageX, event.pageY)
+const x =  event.clientX/width,
+        y = event.clientY/height;
+      console.log("POS", x, y)
+      new Overlay({ target: imageContainer, props: { img: element,
+        pos: {
+            x,
+            y
+        }
+    } });
 
-      new Overlay({ target: imageContainer });
     },
     800
   );
