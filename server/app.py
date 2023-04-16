@@ -15,8 +15,9 @@ plt.figure(figsize=(10, 10))
 
 
 sam = sam_model_registry["vit_h"](checkpoint="sam_vit_h_4b8939.pth")
-# sam.to(device='mps')
+sam.to(device='mps')
 predictor = SamPredictor(sam)
+
 
 app = flask.Flask(__name__)
 

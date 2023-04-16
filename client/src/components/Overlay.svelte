@@ -2,6 +2,7 @@
   import { fade } from "svelte/transition";
   import "../app.css";
   import { onMount } from "svelte";
+  import { storage } from "src/storage";
 
   let loading = true;
   let cutout: string;
@@ -45,11 +46,21 @@
         .then((res) => {
           return res.json();
         })
-        .then((data) => {
-          console.log(data);
+        .then(async(data) => {
+          console.log(data, );
 
           cutout = data.image;
+          console.log("CUTOUT", cutout)
+          chrome.storage.local.set({
+            'cutout': cutout
+            // didn't work
+        }, function() {
+         // alert("updated storage")
+        });
           loading = false;
+          // await storage.set({
+          //   cutout
+          // })
         });
     } catch (e) {
       console.log(e);
