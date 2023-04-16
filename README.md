@@ -10,10 +10,10 @@
 (in progress)
 
 ### Why Stickie?
-${\color{#53BDDE}██}$ Faster than downloading images and editing them with software like photoshop, preview, etc  
-`[✂]` Free and easy to use	  
-`[✂]` No issues with image compatibility and file types		  
-`[✂]` Make and instantly use any sticker within seconds  
+${\color{#53BDDE}★}$ Faster than downloading images and editing them with software like photoshop, preview, etc  
+${\color{#4288BF}★}$ Free and easy to use	  
+${\color{#84C4A9}★}$ No issues with image compatibility and file types		  
+${\color{#00A6AF}★}$ Make and instantly use any sticker within seconds  
 
 ### Stickie in Action  
 **Using an example image, here's how long it took to make a sticker of a figure in it:**  
