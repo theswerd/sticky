@@ -40,8 +40,9 @@
       if ("cutout" in changes && !("past" in changes)) {
         imgData = changes.cutout.newValue;
         if (changes.cutout.oldValue) {
-          console.log("Adding to history");
           const data = await chrome.storage.local.get();
+          console.log("Adding to history", [changes.cutout.oldValue, ...data.past].length);
+
           if (data.past == null) {
             data.past = ["WHAT THE FUCK"];
           }
