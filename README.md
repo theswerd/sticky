@@ -17,7 +17,7 @@ ${\color{#00A6AF}★}$ Make and instantly use any sticker within seconds
 
 ### Stickie in Action  
 **Using an example image, here's how long it took to make a sticker of a figure in it:**  
-${\color{#53BDDE}██}$ stickie - 6 seconds  
+${\color{#53BDDE}██}$ stickie - 9 seconds  
 ${\color{white}██████████}$ photoshop - 61 seconds	  		  
 ${\color{white}██████████████}$ preview - 71 seconds :nauseated_face: 
 
