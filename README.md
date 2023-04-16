@@ -18,8 +18,8 @@ ${\color{#00A6AF}★}$ Make and instantly use any sticker within seconds
 ### Stickie in Action  
 **Using an example image, here's how long it took to make a sticker of a figure in it:**  
 ${\color{#53BDDE}██}$ stickie - 8 seconds  
-${\color{white}██████████}$ photoshop - 61 seconds	  		  
-${\color{white}██████████████}$ preview - 71 seconds :nauseated_face: 
+${\color{white}████████████}$ preview - 68 seconds	  		  
+${\color{white}██████████████}$ photoshop - 75 seconds :nauseated_face: 
 
 ![](https://img.shields.io/badge/stickie-53BDDE?style=for-the-badge)
 ![](https://img.shields.io/badge/is-4288BF?style=for-the-badge)
