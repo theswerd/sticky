@@ -1,6 +1,6 @@
 {
-    "name": "svelte-ts-extension-boilerplate",
-    "description": "Boilerplate for Chrome Extension Svelte Typescript project",
+    "name": "Stickie",
+    "description": "Instant stickers. Anywhere.",
     "version": "1.0",
     "manifest_version": 3,
     "icons": {
